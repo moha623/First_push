@@ -1,0 +1,43 @@
+<form
+  fxLayoutGap="10px"
+  fxLayout="column"
+  fxLayoutAlign="center center"
+  [formGroup]="loginForm"
+  (ngSubmit)="onSubmit()"
+>
+  <mat-form-field style="width: 300px">
+    <mat-label>Enter E-mail</mat-label>
+    <input
+      type="email"
+      required
+      ngModel
+      matInput
+      placeholder="Enter email"
+      formControlName="email"
+    />
+    <mat-hint matInput>Should be at least 9 characters</mat-hint>
+    <mat-error>invalide </mat-error>
+  </mat-form-field>
+  <mat-form-field style="width: 300px">
+    <mat-label>Enter Password</mat-label>
+    <input
+      type="password"
+      required
+      ngModel
+      matInput
+      placeholder="Enter password"
+      formControlName="password"
+    />
+    <mat-hint matInput>Should be at least 9 characters</mat-hint>
+    <mat-error>invalide </mat-error>
+  </mat-form-field>
+  <button
+    type="submit"
+    mat-raised-button
+    color="primary"
+    
+    
+  >
+    Submit
+  </button>
+</form>

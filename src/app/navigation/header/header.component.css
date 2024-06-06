@@ -1,0 +1,20 @@
+ .tool{
+  display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.example-sidenave-bar{
+  margin: 5%;
+}
+.example-sidenave-bar a{
+  
+ padding: 1%;
+ margin: 2%;
+
+} 
+li{
+  text-decoration: none;
+  list-style-type: none;
+}

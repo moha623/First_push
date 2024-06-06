@@ -1,13 +1,7 @@
-
-
-
-
  .example-container {
   max-width: 100%;
   height: 100%;
-  
 }
-
 
 .example-sidenav {
   padding: 20px;
@@ -16,16 +10,14 @@
 }
 .example-mat-toolbar{
   display: flex;
- 
+ justify-content: space-between;
 }
 .example-sidenave-bar{
   margin: 5%;
-  justify-content: right;
 }
 .example-sidenave-bar a{
   
  padding: 1%;
  margin: 2%;
 
-}
- 
+} 

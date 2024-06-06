@@ -1,0 +1,16 @@
+<section class="tool">
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <a routerLink="/">LOGO</a>
+  </div>
+  <div class="example-sidenave-bar" fxHide.xs >
+    <ul fxFlex="row">
+      <li *ngIf="!isAuth"><a routerLink="/signup" >Signup</a></li>
+      <li *ngIf="!isAuth"><a routerLink="/login" >Login</a></li>
+      <li *ngIf="isAuth"><a routerLink="/training" >Training</a></li>
+      <li *ngIf="isAuth"><a routerLink="/login" (click)="onLogout()">Logout</a></li>
+    </ul>
+  </div>
+</section>
